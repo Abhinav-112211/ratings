@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar{
+    width: 15px;
+}
+
+::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: rgb(58, 35, 101);
+    border-radius: 5px;
+}
+
+body{
+    font-family: 'Bree Serif', serif;
+    background-color: rgb(24, 2, 53);
+    height: auto;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(58, 35, 101);
+    padding: 1rem;
+}
+
+.logo{
+    font-size: 25px;
+    font-weight: 600;
+    color: blanchedalmond;
+    padding: 0 15px;
+}
+
+.search{
+    border: 2px solid rgb(24, 2, 53);
+    background-color: transparent;
+    outline: null;
+    color: blanchedalmond;
+    border-radius: 10px;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+}
+
+.search::placeholder{
+    color: blanchedalmond;
+}
+
+.search:hover{
+    background-color: rgb(24, 2, 53);
+}
+
+#search_res ,#total_records{
+    /* font-size: 25px;
+    font-weight: 600; */
+    color: blanchedalmond;
+    padding: 0 15px;
+    margin-top: 20px;
+    letter-spacing: 0.5px;
+}
+
+#total_records{
+    font-size: 1rem;
+    margin-top: 10px;
+    letter-spacing: 0.5px;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.movie{
+    width: 220px;
+    border-radius: 3px;
+    background: blanchedalmond;
+    margin: 1rem;
+}
+
+.movie:hover{
+    box-shadow: 0 0 15px whitesmoke;
+}
+
+.movie img{
+    width: 100%;
+}
+
+.movie-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: rgb(58, 35, 101);
+    padding: 0.5rem 1rem;
+    /* letter-spacing: 0.1rem; */
+}
+
+.movie-info span{
+    border: 2px solid rgb(24, 2, 53);
+    background-color: rgb(24, 2, 53);
+    border-radius: 3px;
+    font-weight: 300;
+    padding: 0.25rem 0.5rem;
+    color: blanchedalmond;
+}
+
+.movie-info span.green{
+    background-color: green;
+}
+
+.movie-info span.yellow{
+    background-color: orange;
+}
+
+.movie-info span.red{
+    background-color: red;
+}
+.logo:hover{
+    cursor: pointer;
+}
